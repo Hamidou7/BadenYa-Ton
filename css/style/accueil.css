@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=PT+Sans&family=Poppins:wght@200&family=Roboto&display=swap');
+.ccnav{
+    background-color: #8c2e26;
+    
+}
+.ccimg{
+    transform: scale(1.5);
+}
+.ccontainer{
+    padding-right: var(--bs-gutter-x,-0.25rem);
+    padding-left: var(--bs-gutter-x,0.75rem);
+}
+.ac{
+    color: #ffffff;
+    font-family: 'PT sans' sans-serif;
+   
+}
+.couleur{
+    height: 91%;
+background: #BF7969;
+position: absolute;
+}
+.trois{
+    font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+
+/* identical to box height */
+
+color: #FFFFFF;
+}
+.quatre{
+    font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+height: 45px;
+
+/* identical to box height */
+
+color: #FFFFFF;
+background: #BF7969;
+box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+border-radius: 28px;
+border: #FFFFFF;
+}
+.cinq{
+
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+
+/* identical to box height */
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.quatre:hover{
+    background-color: #e9ad9f;
+}
+.blanc{
+  height: 427px;
+width: 100%;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.compte, .cotisation, .solde, .etat{
+
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 52px;
+
+/* identical to box height */
+
+color: #000000;
+
+
+}
+.cotisation{
+    background: linear-gradient(180deg, rgba(191, 121, 105, 0.72) 78.42%, rgba(191, 121, 105, 0) 100%);
+border-radius: 54px;
+height: 50px;
+width: 240px;
+color: #FFFFFF;
+margin-top: 7rem !important;
+margin-left: -12rem !important;
+}
+.cotisation:hover{
+    background-color:#e9ad9f ;
+    color: #ffffff;
+}
+.solde{
+
+background: #BF7969;
+border-radius: 12px;
+color: #FFFFFF;
+margin-top: 12rem !important;
+margin-left: -15rem !important;
+width: 362px;
+}
+.etat{
+    background: #BF7969;
+border-radius: 12px;
+color: #FFFFFF;
+margin-top: 17rem !important;
+margin-left: -22.7rem !important;
+width: 362px;
+}
+button{
+    border: none;
+}
+input{
+    border: none;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+}
+@media screen and (max-width:890px) {
+    .trois,.quatre{
+        font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+margin-left: -89px;
+
+    }
+    .blanc{
+        height: 280px;
+    }
+    .couleur{
+        height: 438px;
+    }
+    
+}
+
+@media screen and (max-width:512px){
+    .solde{
+
+        background: #BF7969;
+        border-radius: 12px;
+        color: #FFFFFF;
+        margin-top: 8rem !important;
+        margin-left: -15rem !important;
+        width: 262px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 42px;
+        }
+        .cotisation{
+            margin-left: -5rem !important;
+            font-weight: 400;
+font-size: 18px;
+line-height: 42px;
+margin-top: 4rem !important;
+        }
+        .etat{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 42px;
+            margin-left: -16.5rem !important;
+            width: 262px;
+            margin-top: 14rem !important;
+        }
+}
