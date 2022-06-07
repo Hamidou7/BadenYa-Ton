@@ -1,0 +1,60 @@
+
+.formulaire{
+    text-align: center;
+    background-color:#D9D9D9 ;
+}
+
+.ajoutez{
+    color: #F5F5F5;
+    background-color:#362D73;
+    border-radius: 14%;
+    padding: 4px;
+    border: 2px solid #362D73;
+    width: 20%;
+    height: 20%;
+    margin-left: 20%;
+}
+label{
+    color: black;
+    text-align: center;
+}
+span{
+    color: white;
+text-align: center;
+padding: 15px;
+}
+.couleur{
+    background-color: #BF7969;
+
+}
+.nom{
+    width: 89px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 225px;
+    left: 203px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
+
+    }
+
+    label{
+   display: block; /* La balise devient de type block. */
+	width: 150px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

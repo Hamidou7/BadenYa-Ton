@@ -1,0 +1,40 @@
+h6{
+    float: left;
+    gap: 30%;
+    color: blue;
+}
+.li{
+    color: blue;
+    gap: 20%;
+    margin-left: 35%;
+    }
+    .me{
+        color:blue;
+        gap: 10%;
+        word-spacing: 20%;
+        float: right;
+    }
+    .couleur{
+        background-color:#AC3A3A;
+        height: 50px;
+
+        }
+        .my{
+            background-color: blue;
+            color: #FFF3F3;
+            /* margin-right: 150%; */
+            margin-left: 50%;
+            left: 500px;
+            width: 120px;
+            border-radius: 20px;
+            border: 2px solid blue;
+            margin-top: 2%;
+
+          
+        }
+    
+        
+            span{
+                color: white;
+            }
+           
