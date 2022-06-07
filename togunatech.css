@@ -123,3 +123,13 @@ tbody tr:last-of-type{
         color: #ddd; 
         border: none; 
 }
+.ba{
+    width: 80px;
+    background-color: #0511F2; 
+    border-radius: 40px;
+    color: #ddd; 
+    border: none;
+    margin-top: 28%;
+    margin-left: 50%;
+ 
+}
