@@ -131,5 +131,6 @@ tbody tr:last-of-type{
     border: none;
     margin-top: 28%;
     margin-left: 50%;
+    cursor: pointer;
  
 }
