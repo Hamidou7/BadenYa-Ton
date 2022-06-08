@@ -22,10 +22,19 @@
         width: 600px; height: 350px;
         margin-left: 28%;
         position: relative;
+        border: 2px solid #AC3A3A;
+        font-family: pt sans sans-serif;
+        }
+        .contour{
+            border: 2px solid #AC3A3A;
+        }
+        .tous{
+            margin-left: 40px;
         }
         .payem{
             color: black;
             background-color: #BF7969;
+            margin-left: 60px;
             border-radius: 40px;
             width: 80px;
             border: none;
