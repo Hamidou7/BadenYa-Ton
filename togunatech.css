@@ -1,136 +1,162 @@
 /* LA PARTIE CSS DE PAIEMENT */
 
 .tete{
-background-color: #8C2E26;
-margin-left: 58px;
-padding: 20px;
-position: relative;
-bottom: 65px;
-text-align: center;
-color: #ddd;
-
-}
-img{
-    width: 60px;height: 60px;
-}
-.paye{
-    text-align: center;
-    position: relative;
-    bottom: 10px;
-}
-.corps{
-    width: 600px; height: 350px;
-    margin-left: 28%;
-    position: relative;
-    }
-    .retournp{
-        position: relative;
-        margin-top: 10%;
-        margin-left: 30%;
-    }
-    .quit{
-        width: 80px;
-        background-color: #BF7969;
-        border-radius: 10%;
-    }
-    .send{
-        width: 80px;
-        background-color: #BF7969; 
-        border-radius: 10%;  
-    }
-/* LA PARTIE CSS DE INFO SUR LES MEMBRE */
-.info{
-background-color: #BF7969;
-padding: 20px;
-text-align: center;
-position: relative;
-bottom: 2px;
-padding-left: 0%;
-color: #ddd;
-}
-.infocadre{
-    width: 600px; height: 350px;
-    margin-left: 30%;
-    margin-top: 1%;
-    text-align: center;
-    background-color: #D9D9D9;
-}
-.back{
-    width: 80px;
-        background-color: #0511F2; 
-        border-radius: 40px;
-        color: #ddd;
-        border: none;  
-}
-/* LA PARTIE CSS DE LISTE MEMBRE */
-*, ::before, ::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} 
-body{
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.styletab{
-border-collapse: collapse;
- min-width: 400px;
- width: auto;
- box-shadow: 0 5px 50px rgba(0,0,0,0.15);
- margin: 100px auto;
- /* border: 2px solid midnightblue; */
- border: 1px solid #ddd;
-}
-thead tr {
     background-color: #8C2E26;
+    margin-left: 58px;
+    padding: 20px;
+    position: relative;
+    bottom: 65px;
     text-align: center;
-    color: white;
-} 
-th,  td {
-  padding: 15px 20px;  
-}
-tbody tr, td, th {
-    border: 1px solid #ddd;
-}
-tbody tr:nth-child(even){
-    background-color: #f3f3f3;
-}
-tbody tr:last-of-type{
-    border-bottom: 2px solid midnightblue;
-}
-.mybleau{
-    position: absolute;
-    margin-top: -11%;
-    margin-left: 15%;
-}
-.mybleau2{
-    position: absolute;
-    margin-top: -11%;
-    margin-left: 20%;
-}
-.delt{
-    width: 80px;
-    background-color: #0511F2; 
-    border-radius: 40px;
-    color: #ddd; 
-    border: none;   
-}
-.mod{
-    width: 80px;
+    color: #ddd;
+    
+    }
+    img{
+        width: 60px;height: 60px;
+    }
+    .paye{
+        text-align: center;
+        position: relative;
+        bottom: 10px;
+    }
+    .corps{
+        width: 600px; height: 350px;
+        margin-left: 28%;
+        position: relative;
+        }
+        .payem{
+            color: black;
+            background-color: #BF7969;
+            border-radius: 40px;
+            width: 80px;
+            border: none;
+            height: 20px; 
+            cursor: pointer;   
+        }
+        .payam{
+            color: black;
+            background-color: #BF7969;
+            border-radius: 40px;
+            width: 80px;
+            border: none;
+            position: absolute;
+            bottom: 20%; 
+            margin-left: 30%; 
+            height: 20px;
+            cursor: pointer;   
+        }
+    
+    /* LA PARTIE CSS DE INFO SUR LES MEMBRE */
+    .info{
+    background-color: #BF7969;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 2px;
+    padding-left: 0%;
+    color: #ddd;
+    }
+    .infocadre{
+        width: 600px; height: 350px;
+        margin-left: 30%;
+        margin-top: 1%;
+        text-align: center;
+        background-color: #D9D9D9;
+    }
+    .sayam{
+        color: white;
+        background-color: #0511F2;
+        border-radius: 40px;
+        width: 80px;
+        border: none;
+        height: 20px;
+        cursor: pointer;   
+    }
+    
+    /* LA PARTIE CSS DE LISTE MEMBRE */
+    *, ::before, ::after{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    } 
+    body{
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .styletab{
+    border-collapse: collapse;
+     min-width: 400px;
+     width: auto;
+     box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+     margin: 100px auto;
+     /* border: 2px solid midnightblue; */
+     border: 1px solid #ddd;
+    }
+    thead tr {
+        background-color: #8C2E26;
+        text-align: center;
+        color: white;
+    } 
+    th,  td {
+      padding: 15px 20px;  
+    }
+    tbody tr, td, th {
+        border: 1px solid #ddd;
+    }
+    tbody tr:nth-child(even){
+        background-color: #f3f3f3;
+    }
+    tbody tr:last-of-type{
+        border-bottom: 2px solid midnightblue;
+    }
+    .mybleau{
+        position: absolute;
+        margin-top: -11%;
+        margin-left: 15%;
+    }
+    .mybleau2{
+        position: absolute;
+        margin-top: -11%;
+        margin-left: 20%;
+    }
+    .delt{
+        width: 80px;
         background-color: #0511F2; 
         border-radius: 40px;
         color: #ddd; 
-        border: none; 
-}
-.ba{
-    width: 80px;
-    background-color: #0511F2; 
-    border-radius: 40px;
-    color: #ddd; 
-    border: none;
-    margin-top: 28%;
-    margin-left: 50%;
-    cursor: pointer;
- 
-}
+        border: none;   
+    }
+    
+    .rem{
+        color: white;
+        position: absolute;
+        bottom: 10%;
+        margin-left: 50%;
+        background-color: #0511F2;
+        border-radius: 40px;
+        width: 80px;
+        border: none;
+        height: 20px; 
+        cursor: pointer; 
+    }
+    .renam{
+        color: white;
+        position: absolute;
+        bottom: 10%;
+        margin-left: 50%;
+        background-color: #0511F2;
+        border-radius: 40px;
+        width: 80px;
+        border: none;
+        height: 20px; 
+        cursor: pointer;   
+    }
+    .salam{
+        color: white;
+        background-color: #0511F2;
+        border-radius: 40px;
+        width: 80px;
+        border: none;
+        height: 20px;
+        cursor: pointer;    
+    }
