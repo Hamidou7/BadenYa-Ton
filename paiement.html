@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="togunatech.css">
+    <title>PAIEMENT</title>
+</head>
+<body>
+    <nav class="paie">
+        <img src="imgbadenyaton.jpeg" alt="logobadenyaton">
+        <div class="tete">
+           
+               <div class="slogan">LA MUTUALITE AU COEUR DE LA FRATERNITE (BADENYA)</div>
+        </div>
+           <h5 class="paye"> Paiement Cotisation</h5>
+      
+    </nav>
+    <form>
+        <fieldset class="corps">        
+                  <label for="montant a payer">montant a payer :</label> <br><br>
+                  <input type="text" name="montant" placeholder="veillez saisir vos montant"><br><br>
+                 <label for="l'operateur">Choisir operateur : </label><br><br>
+                <select id="l'operateur">
+                     <option>Moovmoney</option>
+                    <option>Orangemoney</option>
+                    <option>Wave</option>
+                    <option>Samamoney</option>
+               </select><br><br>
+                    <label for="Bénéficiaire">Bénéficiaire:</label> <br>
+                    <input type="number" name="beneficiaire" placeholder="veillez entrez le numéro du bénéficiaire"><br><br>
+                    <input onclick="window.location.href='payer.html'" class="send" type="Submit" name="payer" value="Payer">
+                    <div  class="retournp"><button onclick="window.location.href='accueilmembre.html'" class="quit">Retour</button></div>
+        </fieldset>
+    </form>
+</body>
+</html>
