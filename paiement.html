@@ -17,7 +17,7 @@
            <h5 class="paye"> Paiement Cotisation</h5>
       
     </nav>
-    <form>
+    <form method="" action="">
         <fieldset class="corps">        
                   <label for="montant a payer">montant a payer :</label> <br><br>
                   <input type="text" name="montant" placeholder="veillez saisir vos montant"><br><br>
@@ -30,8 +30,10 @@
                </select><br><br>
                     <label for="Bénéficiaire">Bénéficiaire:</label> <br>
                     <input type="number" name="beneficiaire" placeholder="veillez entrez le numéro du bénéficiaire"><br><br>
-                    <a href="payer.html"><button class="payem"> Payer</button></a>
-                    <a href="accueilmembre.html"><button class="payam"> Retour</button></a>
+                    <!-- <a href="listemembre.html"><button class="payem"> Payer</button></a> -->
+                    <!-- <button onclick="window.location.href = 'listemembre.html';" class="payem"> Payer</button > -->
+                        <input class="payem" type="button" onclick="window.location.href = 'payer.html';" value="Payer"/>
+                        <input class="payam" type="button" onclick="window.location.href = 'accueilmembre.html';" value="Retour"/>
         </fieldset>
     </form>
 </body>
