@@ -1,0 +1,43 @@
+<?php
+   include_once "header.php";
+?>
+<body>
+    <div class="wrapper">
+        <section class="form signup">
+            <header class="head">S'inscrire</header>
+            <form action="#" autocomplete="off" enctype="multipart/form-data">
+              <div class="error-tx"></div>
+                <div class="name-details">
+                    <div class="field input">
+                       <label>Prénom</label>
+                       <input type="text" name="fname" placeholder="Prénom" required>
+                    </div>
+                    <div class="field input">
+                        <label>Nom</label>
+                        <input type="text"  name="lname" placeholder="Nom" required>
+                     </div>  </div>
+                     <div class="field input">
+                        <label>Email</label>
+                        <input type="text"  name="email" placeholder="Email" required>
+                     </div>
+                     <div class="field input">
+                        <label>Mot de Passe</label>
+                        <input type="password"  name="pasword" placeholder="Mot de passe" required>
+                        <i class="fas fa-eye"></i>
+                     </div>
+                     <div class="field image">
+                        <label>Mettre Image</label>
+                        <input type="file"  name="image">
+                     </div>
+              
+                <div class="field button">
+                    <input type="submit" value="Connexion">
+                 </div>
+                 <div class="link">Avez-vous deja un compte? <a href="login.php">Connecter Vous</a></div>
+            </form>
+        </section>
+    </div>
+    <script src="./js/passw.js"></script>
+    <script src="./js/signup.js"></script>
+</body>
+</html>
