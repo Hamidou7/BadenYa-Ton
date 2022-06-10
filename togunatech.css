@@ -68,7 +68,7 @@
         width: 600px; height: 350px;
         margin-left: 30%;
         margin-top: 1%;
-        text-align: center;
+        /* text-align: center; */
         background-color: #D9D9D9;
     }
     .sayam{
@@ -78,7 +78,12 @@
         width: 80px;
         border: none;
         height: 20px;
+        margin-left: 45%;
         cursor: pointer;   
+    }
+    .tire{
+        /* border-bottom: 2px solid blue; */
+        margin-left: 5%;
     }
     
     /* LA PARTIE CSS DE LISTE MEMBRE */
@@ -101,10 +106,16 @@
      /* border: 2px solid midnightblue; */
      border: 1px solid #ddd;
     }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
     thead tr {
         background-color: #8C2E26;
         text-align: center;
         color: white;
+        
     } 
     th,  td {
       padding: 15px 20px;  
