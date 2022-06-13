@@ -171,36 +171,39 @@ p{
    
 }
 .users .search .text{
-    font-size: 18px;
+    font-size: 18px; 
 }
 .users .search input{
     position: absolute;
-    height: 42px;
-    width: calc(100% - 50px);
-    border: 2px solid #AC3A3A;
-    padding: 0 13px;
-    font-size: 16px;
-    border-radius:5px 0 0 5px;
-    outline: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
+  height: 42px;
+  width: calc(100% - 50px);
+  font-size: 16px;
+  padding: 0 13px;
+  border: 2px solid #AC3A3A;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
 }
-.users .search input.active{
+.users .search input.show{
     opacity: 1;
     pointer-events: auto;
 }
 .users .search button{
-    width: 49.7px;
+    position: relative;
+    z-index: 1;
+    width: 47px;
     height: 42px;
-    border: none;
-    outline: none;
-    color: #333;
-    background-color: #fff;
-    border-radius: 0 5px 5px 0;
+    font-size: 17px;
     cursor: pointer;
+    border: none;
+    background: #fff;
+    color: #333;
+    outline: none;
+    border-radius: 0 5px 5px 0;
     transition: all 0.2s ease;
-}
+  }
 .users .search button.active{
     color: #fff;
     background-color: #362D73;

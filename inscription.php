@@ -21,6 +21,18 @@
                         <input type="text"  name="email" placeholder="Email" required>
                      </div>
                      <div class="field input">
+                        <label>Status</label>
+                        <input type="text"  name="stat" placeholder="votre status svp" required>
+                     </div>
+                     <div class="field input">
+                        <label>Adresse</label>
+                        <input type="text"  name="adess" placeholder="adresse" required>
+                     </div>
+                     <div class="field input">
+                        <label>Contact</label>
+                        <input type="text"  name="conta" placeholder="contact" required>
+</div>
+                     <div class="field input">
                         <label>Mot de Passe</label>
                         <input type="password"  name="pasword" placeholder="Mot de passe" required>
                         <i class="fas fa-eye"></i>

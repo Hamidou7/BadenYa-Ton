@@ -5,7 +5,7 @@
     <div class="wrapper">
         <section class="form login">
             <header class="head">S'autentifier</header>
-            <form action="#" autocomplete="off">
+            <form action="#" enctype="multipart/form-data" autocomplete="off">
             <div class="error-tx"></div>
                 <div class="name-details">
                     <div class="field input">

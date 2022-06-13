@@ -3,10 +3,13 @@ session_start();
 include_once"config.php";
  $fname = mysqli_real_escape_string($conn, $_POST['fname']);
  $lname = mysqli_real_escape_string($conn, $_POST['lname']);
- $email = mysqli_real_escape_string($conn, $_POST['email']);
+ $email = mysqli_real_escape_string($conn, $_POST['email']); 
  $pasword = mysqli_real_escape_string($conn, $_POST['pasword']);
+ $adess = mysqli_real_escape_string($conn, $_POST['adess']);
+ $conta = mysqli_real_escape_string($conn, $_POST['conta']);
+ $stat = mysqli_real_escape_string($conn, $_POST['stat']);
 
-  if(!empty($fname) && !empty($lname) && !empty($email) && !empty($pasword)){
+  if(!empty($fname) && !empty($lname) && !empty($email) && !empty($pasword)  && !empty($adess)  && !empty($conta)  && !empty($stat)){
 
       if(filter_var($email, FILTER_VALIDATE_EMAIL)){
           
@@ -31,11 +34,11 @@ include_once"config.php";
                       $new_img_name = $time.$img_name;
                       if (move_uploaded_file($tmp_name, "images/".$new_img_name)){
                           $statu = "en ligne";
-                          $random_id = rand(time(),10000000);
+                          $ran_id = rand(time(),10000000);
 
 
-                          $sql2 = mysqli_query($conn, "INSERT INTO users(unique_id, fname, lname, email, pasword,img, statu)
-                                                VALUES({$random_id}, '{$fname}', '{$lname}', '{$email}', '{$pasword}', '{$new_img_name}','{$statu}' ) ");
+                          $sql2 = mysqli_query($conn, "INSERT INTO users(unique_id, fname, lname, email, pasword,img, statu, adess, conta, stat)
+                                                VALUES({$ran_id}, '{$fname}', '{$lname}', '{$email}', '{$pasword}', '{$new_img_name}','{$statu}','{$adess}', '{$conta}', '{$stat}' ) ");
                           if($sql2){
                               $sql3 = mysqli_query($conn, "SELECT * FROM  users WHERE email = '{$email}'");
                               if(mysqli_num_rows($sql3) > 0){

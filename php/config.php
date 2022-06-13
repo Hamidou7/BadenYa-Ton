@@ -1,5 +1,5 @@
 <?php
-    $conn= mysqli_connect("localhost", "root" ,"", "chat");
+    $conn= mysqli_connect("localhost", "root" ,"", "badenya-ton");
     if($conn){
         echo" ";
     }else{
