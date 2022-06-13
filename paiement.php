@@ -32,8 +32,8 @@
                     <input  class="contour tous" type="number" name="beneficiaire" placeholder="veillez entrez le numéro du bénéficiaire"><br><br>
                     <!-- <a href="listemembre.html"><button class="payem"> Payer</button></a> -->
                     <!-- <button onclick="window.location.href = 'listemembre.html';" class="payem"> Payer</button > -->
-                        <input class="payem" type="submit" onclick="window.location.href = 'payer.html';" value="Payer"/>
-                        <input class="payam" type="button" onclick="window.location.href = 'accueilmembre.html';" value="Retour"/>
+                        <input class="payem" type="submit" onclick="window.location.href = 'payer.php';" value="Payer"/>
+                        <input class="payam" type="button" onclick="window.location.href = 'accueilmembre.php';" value="Retour"/>
         </fieldset>
     </form>
 </body>

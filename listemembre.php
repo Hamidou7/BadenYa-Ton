@@ -32,165 +32,165 @@
         <tbody>
             <tr>
                 <td>
-                    <a href="infosurmembre.html">Diarra</a>
+                    <a href="infosurmembre.php">Diarra</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Sitan</a>
+                    <a href="infosurmembre.php">Sitan</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Kati</a>
+                    <a href="infosurmembre.php">Kati</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">78546907</a>
+                    <a href="infosurmembre.php">78546907</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Membre</a>
+                    <a href="infosurmembre.php">Membre</a>
                 </td>
              
                 <td>
-                    <a href="infosurmembre.html">A jour</a>
+                    <a href="infosurmembre.php">A jour</a>
                 </td>
-                <td><a href="ajoutmembre.html"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
+                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
             </tr>
             <tr>
                 <td>
-                    <a href="infosurmembre.html">Maiga</a>
+                    <a href="infosurmembre.php">Maiga</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Fatoumata</a>
+                    <a href="infosurmembre.php">Fatoumata</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Badialan1</a>
+                    <a href="infosurmembre.php">Badialan1</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">66900880</a>
+                    <a href="infosurmembre.php">66900880</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Admin</a>
+                    <a href="infosurmembre.php">Admin</a>
                 </td>
              
                 <td>
-                    <a href="infosurmembre.html">A jour</a>
+                    <a href="infosurmembre.php">A jour</a>
                 </td>
-                <td><a href="ajoutmembre.html"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
+                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
             </tr>
             <tr>
                 <td>
-                    <a href="infosurmembre.html">Fané</a>
+                    <a href="infosurmembre.php">Fané</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Kadiatou</a>
+                    <a href="infosurmembre.php">Kadiatou</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Kalaban</a>
+                    <a href="infosurmembre.php">Kalaban</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">90088066</a>
+                    <a href="infosurmembre.php">90088066</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Membre</a>
+                    <a href="infosurmembre.php">Membre</a>
                 </td>
              
                 <td>
-                    <a href="infosurmembre.html">PAS A JOUR </a>
+                    <a href="infosurmembre.php">PAS A JOUR </a>
                 </td>
-                <td><a href="ajoutmembre.html"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
+                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
             </tr>
             <tr>
                 <td>
-                    <a href="infosurmembre.html">Doumbia</a>
+                    <a href="infosurmembre.php">Doumbia</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Aissata</a>
+                    <a href="infosurmembre.php">Aissata</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Ouenzzindougou</a>
+                    <a href="infosurmembre.php">Ouenzzindougou</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">83098765</a>
+                    <a href="infosurmembre.php">83098765</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Membre</a>
+                    <a href="infosurmembre.php">Membre</a>
                 </td>
              
                 <td>
-                    <a href="infosurmembre.html">A jour</a>
+                    <a href="infosurmembre.php">A jour</a>
                 </td>
-                <td><a href="ajoutmembre.html"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
+                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
             </tr>
             <tr>
                 <td>
-                    <a href="infosurmembre.html">Dolo</a>
+                    <a href="infosurmembre.php">Dolo</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Yabara</a>
+                    <a href="infosurmembre.php">Yabara</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Faladjè</a>
+                    <a href="infosurmembre.php">Faladjè</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">50897634</a>
+                    <a href="infosurmembre.php">50897634</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Membre</a>
+                    <a href="infosurmembre.php">Membre</a>
                 </td>
              
                 <td>
-                    <a href="infosurmembre.html">PAS A JOUR</a>
+                    <a href="infosurmembre.php">PAS A JOUR</a>
                 </td>
-                <td><a href="ajoutmembre.html"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
+                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
             </tr>
             <tr>
                <td>
-                    <a href="infosurmembre.html">Sagara</a>
+                    <a href="infosurmembre.php">Sagara</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Hawa</a>
+                    <a href="infosurmembre.php">Hawa</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Mountougoula</a>
+                    <a href="infosurmembre.php">Mountougoula</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">70872300</a>
+                    <a href="infosurmembre.php">70872300</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.html">Membre</a>
+                    <a href="infosurmembre.php">Membre</a>
                 </td>
              
                 <td>
-                    <a href="infosurmembre.html">A jour</a>
+                    <a href="infosurmembre.php">A jour</a>
                 </td>
-                <td><a href="ajoutmembre.html"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
+                <td><a href="inscription.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
             </tr>
          
         </tbody>
     </table>
     
 </div>
-<a  href="accueil.html"><button class="rem">Retour</button> </a>
+<a  href="accueil.php"><button class="rem">Retour</button> </a>
 </body>
 </html>

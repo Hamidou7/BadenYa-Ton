@@ -19,7 +19,7 @@
          <label class="tire" for="Contact">Contact:<samp>.......................</samp> </label><br><br>
          <label class="tire" for="Statut">Statut : <samp>.........................</samp> </label><br><br>
          <label class="tire" for="Etat du Compte">Etat du Compte: <samp>..............................</samp> </label><br><br>
-         <a href="accueil.html"><button class="sayam"> Retour</button></a>
+         <a href="accueil.php"><button class="sayam"> Retour</button></a>
       </fieldset>
  </form>
 </body>
