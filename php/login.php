@@ -21,4 +21,3 @@
     }else{
         echo "Tous les champs doivent etre remplis.";
     }
-?>

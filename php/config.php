@@ -5,6 +5,3 @@
     }else{
         echo"erreur" .mysqli_connect_error();
     }
-
-
-?>
