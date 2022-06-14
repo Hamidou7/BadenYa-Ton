@@ -24,171 +24,63 @@
                 <th>ADRESSE</th>
                 <th>CONTACT</th>
                 <th>STATUT</th>
-                <th>ETAT DU COMPTE</th>
                 <th>ACTION</th>
             </tr>
         </thead>
 
         <tbody>
+        <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "badenya-ton";
+$id = "user_id";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT user_id, fname, lname, statu, adess, conta,stat FROM users";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+echo'
+        
             <tr>
                 <td>
-                    <a href="infosurmembre.php">Diarra</a>
+                    
+                <a href="infosurmembre.php?id='.$row['user_id'].'">'.$row['fname'].'</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.php">Sitan</a>
+                    <a href="infosurmembre.php?id='.$row['user_id'].'"> '.$row['lname'].'</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.php">Kati</a>
+                    <a href="infosurmembre.php?id='.$row['user_id'].'"> '.$row['adess'].'</a>
                 </td>
                 
                 <td>
-                    <a href="infosurmembre.php">78546907</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Membre</a>
+                    <a href="infosurmembre.php?id='.$row['user_id'].'"> '.$row['conta'].'</a>
                 </td>
              
                 <td>
-                    <a href="infosurmembre.php">A jour</a>
+                    <a href="infosurmembre.php?'.$row['user_id'].'"> '.$row['stat'].'</a>
                 </td>
-                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="infosurmembre.php">Maiga</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Fatoumata</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Badialan1</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">66900880</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Admin</a>
-                </td>
-             
-                <td>
-                    <a href="infosurmembre.php">A jour</a>
-                </td>
-                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="infosurmembre.php">Fané</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Kadiatou</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Kalaban</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">90088066</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Membre</a>
-                </td>
-             
-                <td>
-                    <a href="infosurmembre.php">PAS A JOUR </a>
-                </td>
-                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="infosurmembre.php">Doumbia</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Aissata</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Ouenzzindougou</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">83098765</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Membre</a>
-                </td>
-             
-                <td>
-                    <a href="infosurmembre.php">A jour</a>
-                </td>
-                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="infosurmembre.php">Dolo</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Yabara</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Faladjè</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">50897634</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Membre</a>
-                </td>
-             
-                <td>
-                    <a href="infosurmembre.php">PAS A JOUR</a>
-                </td>
-                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
-            </tr>
-            <tr>
-               <td>
-                    <a href="infosurmembre.php">Sagara</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Hawa</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Mountougoula</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">70872300</a>
-                </td>
-                
-                <td>
-                    <a href="infosurmembre.php">Membre</a>
-                </td>
-             
-                <td>
-                    <a href="infosurmembre.php">A jour</a>
-                </td>
-                <td><a href="inscription.php"><button class="salam"> Modifier</button></a> <a href=""><button class="salam"> Supprimer</button></a></td>
-            </tr>
-         
+                <td><a href="ajoutmembre.php"><button class="salam"> Modifier</button></a> <a href="suppresion.php?id='.$row['user_id'].' "><button class="salam"> Supprimer</button></a></td>
+            </tr>   
+            ';
+        }
+    }
+    ?>
         </tbody>
-    </table>
+        
+ </table>
     
 </div>
 <a  href="accueil.php"><button class="rem">Retour</button> </a>
