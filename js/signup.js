@@ -14,7 +14,7 @@ continueBtn.onclick = () => {
       if (xhr.status === 200) {
         let data = xhr.response;
         if (data === "success") {
-          setTimeout(' window.location.href = "home.php"; ', 6000);
+          location.href = "users.php";
         } else {
           errorText.style.display = "block";
           errorText.textContent = data;

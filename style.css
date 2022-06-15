@@ -421,3 +421,7 @@ p {
     font-size: 19px;
     cursor: pointer;
 }
+
+h2 {
+    font-weight: bold;
+}

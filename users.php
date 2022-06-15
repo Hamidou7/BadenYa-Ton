@@ -26,11 +26,11 @@ if (!isset($_SESSION['unique_id'])) {
                         <p><?php echo $row['statu'] ?></p>
                     </div>
                 </div>
-                <a href="php/logout.php?logout_id=<?php echo $row['unique_id'] ?>" class="logout">Logout</a>
+                <a href="php/logout.php?logout_id=<?php echo $row['unique_id'] ?>" class="logout">Déconnexion</a>
             </header>
             <div class="search">
-                <span class="text">Select an user to start chat</span>
-                <input type="text" placeholder="Enter name to search...">
+                <span class="text">Selectionner un membre pour demarer</span>
+                <input type="text" placeholder="Entrer un nom a rechercher">
                 <button><i class="fas fa-search"></i></button>
             </div>
             <div class="users-list">
