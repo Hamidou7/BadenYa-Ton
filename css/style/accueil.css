@@ -111,8 +111,13 @@ width: 362px;
     background: #BF7969;
 border-radius: 12px;
 color: #FFFFFF;
+<<<<<<< HEAD
 margin-top: 17rem !important;
 margin-left: -22.7rem !important;
+=======
+margin-top: 11rem !important;
+margin-left: -22rem !important;
+>>>>>>> 8c86dc4896ee87ae5a57aba89af88190d62f5b66
 width: 362px;
 }
 button{
