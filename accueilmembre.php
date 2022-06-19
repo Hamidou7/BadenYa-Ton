@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['fname'])) {
+    header("location : login2.php");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,20 +35,20 @@
                 <p class="trois ">La mutualite au coeur de la fraternité</p>
             </div>
             <div class="col-2 sm-8 mt-1 text-end">
-              <button onclick="window.location.href = 'connexion.html'" class="quatre">Déconnexion</button>
+              <button onclick="window.location.href = 'logout2.php'" class="quatre">Déconnexion</button>
             </div>    
            
               
           </div>
           <div class="row">
               <div class="col-2 mt-5">
-                  <a href="listemembre2.html" class="cinq">Membre</a> <br>
-                  <a href="tchat.html" class="cinq">We Chat</a> <br>
+                  <a href="index2.php" class="cinq">Membre</a> <br>
+                  <a href="inscription.php" class="cinq">We Chat</a> <br>
               </div>
               <div class="col-10 mt-5 ">
                 <div class="blanc d-flex justify-content-center" style="margin-top: 56px;">
                 <span class="compte">Mon Compte</span>
-                <a href="paiement.html" class="cotisation px-3">Payer Cotisation</a>
+                <a href="paiement.php" class="cotisation px-3">Payer Cotisation</a>
                 <form action="" method="get">
                 <label class="solde" type="text" name="solde">Votre solde est :</label>
 

@@ -5,7 +5,7 @@ include_once "header.php";
 <body>
     <div class="wrapper">
         <section class="form login">
-            <header class="head">S'autentifier</header>
+            <header class="head">S'autentifier pour le Tchat </header>
             <form action="#" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-tx"></div>
                 <div class="name-details">
@@ -26,6 +26,7 @@ include_once "header.php";
                             <input type="submit" value="Connexion">
                         </div>
                         <div class="link">Vous n'avez pas un compte? <a href="inscription.php">Creer un Compte</a></div>
+                        <a href="accueil.php" class="btn btn-secondary ml-2" style="border: 2px solid #362D73; background:#362D73; color:#fff; text-align:center; border-radius: 5px;">Rétour</a>
             </form>
         </section>
     </div>

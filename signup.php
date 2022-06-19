@@ -43,7 +43,7 @@ if (!empty($fname) && !empty($lname) && !empty($email) && !empty($pasword)  && !
                             if (mysqli_num_rows($sql3) > 0) {
                                 $row = mysqli_fetch_assoc($sql3);
                                 $_SESSION['unique_id'] = $row['unique_id'];
-                                header("location: ./login.php");
+                                header("location: ./login1.php");
                             }
                         } else {
                             echo "il y a une erreur ";

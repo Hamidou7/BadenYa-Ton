@@ -1,9 +1,9 @@
 <?php
 // Include config file
-require_once "connexionBase.php";
+require_once "config2.php";
 
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = "";
+$fname = $lname = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
 
 // Processing form data when form is submitted
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $username_err = "le Nom de membre doit contenir une lettre un nombre et un caractere.";
     } else {
         // Prepare a select statement
-        $sql = "SELECT id FROM membre WHERE username = ?";
+        $sql = "SELECT id FROM user WHERE username = ?";
 
         if ($stmt = $mysqli->prepare($sql)) {
             // Bind variables to the prepared statement as parameters
@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
+    <title>S'inscrire</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <style>

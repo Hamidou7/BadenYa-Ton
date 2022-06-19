@@ -3,14 +3,11 @@
 require_once "config2.php";
 
 // Define variables and initialize with empty values
-$fname = $lname = $adess = $conta = $stat = "";
-$name_err = $lname_err = $adess_err = $conta_err = $stat_err = "";
+$fname  = $lname =  $adess = $conta = $stat = $pass = $confi_pass = "";
+$fname_err = $lname_err = $adess_err =  $conta_err = $stat_err =  $pass_err =  $confi_pass_err = "";
 
 // Processing form data when form is submitted
-if (isset($_POST["id"]) && !empty($_POST["id"])) {
-    // Get hidden input value
-    $id = $_POST["id"];
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate name
     $input_fname = trim($_POST["fname"]);
     if (empty($input_fname)) {
@@ -30,14 +27,13 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $lname = $input_lname;
     }
 
-    // Validate address address
+    // Validate address
     $input_adess = trim($_POST["adess"]);
     if (empty($input_adess)) {
         $adess_err = "Please enter an address.";
     } else {
         $adess = $input_adess;
     }
-
 
     $input_conta = trim($_POST["conta"]);
     if (empty($input_conta)) {
@@ -54,15 +50,34 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
     }
 
 
+    // Validate password
+    if (empty(trim($_POST["pass"]))) {
+        $pass_err = "S'il vous plait entrer un mot de passe.";
+    } elseif (strlen(trim($_POST["pass"])) < 6) {
+        $pass_err = "Le mot de passe doit contenir au moins 6 caracteres.";
+    } else {
+        $pass = trim($_POST["pass"]);
+    }
+
+    // Validate confirm password
+    if (empty(trim($_POST["confi_pass"]))) {
+        $confi_pass_err = "confirmer le mot de passe s'il vous plait.";
+    } else {
+        $confi_passw = trim($_POST["confi_pass"]);
+        if (empty($pass_err) && ($pass != $confi_pass)) {
+            $confi_pass_err = "Mot de passe different.";
+        }
+    }
+
 
     // Check input errors before inserting in database
-    if (empty($fname_err)  && empty($lname_err) && empty($adess_err)  && empty($conta_err) && empty($stat_err)) {
-        // Prepare an update statement
-        $sql = "UPDATE user SET fname=?, lname=?, adess=?, conta=?, stat=? WHERE id=?";
+    if (empty($fname_err)  && empty($lname_err) && empty($adess_err)  && empty($conta_err) && empty($stat_err) && empty($pass_err) && empty($config_config_err)) {
+        // Prepare an insert statement
+        $sql = "INSERT INTO user (fname, lname, adess, conta, stat, pass,confi_pass) VALUES (?, ?, ?, ?,?,?,?)";
 
         if ($stmt = $mysqli->prepare($sql)) {
             // Bind variables to the prepared statement as parameters
-            $stmt->bind_param("sssssi", $param_fname, $param_lname, $param_adess, $param_conta, $param_stat, $param_id);
+            $stmt->bind_param("sssisii", $param_fname, $param_lname, $param_adess, $param_conta, $param_stat, $param_pass, $param_confi_pass);
 
             // Set parameters
             $param_fname = $fname;
@@ -70,11 +85,11 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
             $param_adess = $adess;
             $param_conta = $conta;
             $param_stat = $stat;
-            $param_id = $id;
-
+            $param_pass = $pass;
+            $param_confi_pass = $confi_pass;
             // Attempt to execute the prepared statement
             if ($stmt->execute()) {
-                // Records updated successfully. Redirect to landing page
+                // Records created successfully. Redirect to landing page
                 header("location: index2.php");
                 exit();
             } else {
@@ -88,56 +103,6 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
 
     // Close connection
     $mysqli->close();
-} else {
-    // Check existence of id parameter before processing further
-    if (isset($_GET["id"]) && !empty(trim($_GET["id"]))) {
-        // Get URL parameter
-        $id =  trim($_GET["id"]);
-
-        // Prepare a select statement
-        $sql = "SELECT * FROM user WHERE id = ?";
-        if ($stmt = $mysqli->prepare($sql)) {
-            // Bind variables to the prepared statement as parameters
-            $stmt->bind_param("i", $param_id);
-
-            // Set parameters
-            $param_id = $id;
-
-            // Attempt to execute the prepared statement
-            if ($stmt->execute()) {
-                $result = $stmt->get_result();
-
-                if ($result->num_rows == 1) {
-                    /* Fetch result row as an associative array. Since the result set
-                    contains only one row, we don't need to use while loop */
-                    $row = $result->fetch_array(MYSQLI_ASSOC);
-
-                    // Retrieve individual field value
-                    $fname = $row["fname"];
-                    $lname = $row["lname"];
-                    $adess = $row["adess"];
-                    $conta = $row["conta"];
-                    $stat = $row["stat"];
-                } else {
-                    // URL doesn't contain valid id. Redirect to error page
-                    header("location: error.php");
-                    exit();
-                }
-            } else {
-                echo "Oops! Something went wrong. Please try again later.";
-            }
-        }
-
-        // Close statement
-        $stmt->close();
-
-        // Close connection
-        $mysqli->close();
-    } else {
-        // URL doesn't contain id parameter. Redirect to error page
-        header("location: error.php");
-        exit();
-    }
 }
 ?>
 
@@ -146,58 +111,72 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
 
 <head>
     <meta charset="UTF-8">
-    <title>Update Record</title>
+    <title>Ajout Membre</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
         .wrapper {
-            width: 460px;
+            width: 600px;
             margin: 0 auto;
+            height: auto;
         }
-       
- </style>
+    </style>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="container-fluid">
-            <div class="row py-3">
+            <div class="row">
                 <div class="col-md-12">
                 <a class="navbar-brand">
-                        <img src="./img/tontine.png" alt="" width="60" height="36" style="background-color: #ffff;" class="ccimg">
-                        <span class="text-uppercase ac ms-5">BadenYa Ton<span>
-                    </a>
-                    <h2 class="mt-3 text-center" style="border: 2px solid #AC3A3A; background:#AC3A3A; color:#fff; border-radius:5px;">Modification membre</h2>
-                    <p>Veuillez modifier les valeurs d'entrée et soumettre pour mettre à jour le dossier du membres.</p>
-                    <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
+            <img src="./img/tontine.png" alt="" width="60" height="36" style="background-color: #ffff;" class="ccimg">
+            <span class="text-uppercase ac ms-5">BadenYa Ton<span>
+        </a>
+                    <h2 class="mt-1 text-center" style="border: 2px solid #AC3A3A; background:#AC3A3A; color:#fff; border-radius:5px;">Ajout Membre</h2>
+                    <p>Veuillez remplir ce formulaire et le soumettre pour ajouter un enregistrement de membre à la base de données.</p>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group">
                             <label>Nom</label>
                             <input type="text" name="fname" class="form-control <?php echo (!empty($fname_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $fname; ?>">
                             <span class="invalid-feedback"><?php echo $fname_err; ?></span>
                         </div>
+
                         <div class="form-group">
                             <label>Prenom</label>
                             <input type="text" name="lname" class="form-control <?php echo (!empty($lname_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $lname; ?>">
                             <span class="invalid-feedback"><?php echo $lname_err; ?></span>
                         </div>
+
                         <div class="form-group">
-                            <label>Addresse</label>
-                            <input name="adess" class="form-control <?php echo (!empty($adess_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $adess; ?>">
+                            <label>Adresse</label>
+                            <input type="text" name="adess" class="form-control <?php echo (!empty($adess_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $adess; ?>">
                             <span class="invalid-feedback"><?php echo $adess_err; ?></span>
                         </div>
+
                         <div class="form-group">
                             <label>Contact</label>
-                            <input name="conta" class="form-control <?php echo (!empty($conta_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $conta; ?>">
+                            <input type="number" name="conta" class="form-control <?php echo (!empty($conta_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $conta; ?>">
                             <span class="invalid-feedback"><?php echo $conta_err; ?></span>
                         </div>
+
                         <div class="form-group">
-                            <label>Statut</label>
+                            <label>Name</label>
                             <input type="text" name="stat" class="form-control <?php echo (!empty($stat_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $stat; ?>">
                             <span class="invalid-feedback"><?php echo $stat_err; ?></span>
                         </div>
-                        <input type="hidden" name="id" value="<?php echo $id; ?>" />
+                        <div class="form-group">
+                            <label>Mot de Passe</label>
+                            <input type="password" name="pass" class="form-control <?php echo (!empty($pass_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $pass; ?>">
+                            <span class="invalid-feedback"><?php echo $pass_err; ?></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmer mot de passe</label>
+                            <input type="password" name="confi_pass" class="form-control <?php echo (!empty($confi_pass_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confi_pass; ?>">
+                            <span class="invalid-feedback"><?php echo $confi_pass_err; ?></span>
+                        </div>
+
                         <input type="submit" class="btn btn-primary" value="Soumettre">
-                        <a href="index2.php" class="btn btn-secondary ml-2">Annuler</a>
+                        <a href="accueil.php" class="btn btn-secondary ml-2">Annuler</a>
                     </form>
                 </div>
             </div>

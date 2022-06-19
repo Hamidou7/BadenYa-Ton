@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['unique_id'])) {
-    header("location: login.php");
+    header("location: login2.php");
 }
 ?>
 <?php include_once "header.php"; ?>

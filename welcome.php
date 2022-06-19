@@ -25,7 +25,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 </head>
 
 <body>
-    <h1 class="my-5">Salut, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Bienvenue sur Badenya-Ton.</h1>
+    <h1 class="my-5">Salut, <b><?php echo htmlspecialchars($_SESSION["fname"]); ?></b>. Bienvenue sur Badenya-Ton.</h1>
     <p>
         <a href="reset-password.php" class="btn btn-warning">Réinitialiser votre mot de passe</a>
         <a href="logout2.php" class="btn btn-danger ml-3">Déconnectez-vous de votre compte</a>

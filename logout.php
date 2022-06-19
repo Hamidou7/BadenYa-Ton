@@ -10,11 +10,11 @@ if (isset($_SESSION['unique_id'])) {
         if ($sql) {
             session_commit();
             session_destroy();
-            header("location: ../login.php");
+            header("location: ../login1.php");
         }
     } else {
         header("location: ../users.php");
     }
 } else {
-    header("location: ..login.php");
+    header("location: ..login1.php");
 }

@@ -13,7 +13,7 @@ include_once "header.php";
 <body>
    <div class="wrapper">
       <section class="form signup">
-         <header class="head">S'inscrire</header>
+         <header class="head">S'inscrire pour le  Tchat </header>
          <form action="#" method="POST" autocomplete="off" enctype="multipart/form-data">
             <div class="error-tx"></div>
             <div class="name-details">
@@ -55,7 +55,8 @@ include_once "header.php";
             <div class="field button">
                <input type="submit" name="submit" value="Connexion">
             </div>
-            <div class="link">Avez-vous deja un compte? <a href="login.php">Connecter Vous</a></div>
+            <div class="link">Avez-vous deja un compte? <a href="login1.php">Connecter Vous</a></div>
+            <a href="accueil.php" class="btn btn-secondary ml-2" style="border: 2px solid #362D73; background:#362D73; color:#fff; text-align:center; border-radius: 5px;">Rétour</a>
          </form>
       </section>
    </div>
